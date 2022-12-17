@@ -4,4 +4,4 @@ How does it work?
 We have a file which generates our data and after we formulate the data, it is sent to the main application which already generates it for the user. From there you can see how the user sees this data.
 When the user enters the applications we see the main screen which has only 3 buttons
 
-#(main.png)
+![](main.png)
