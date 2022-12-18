@@ -14,27 +14,20 @@ When the user enters the applications we see the main screen which has only 3 bu
 
 The "movie" button allows you to dive into the world of movies and choose something for yourself. By clicking on the genre button you will be able to select one of the five genres presented:
 
--action
-
--fantasy 
-
--drama
-
--romance
-
--animation
-
+- action
+- fantasy 
+- drama
+- romance
+- animation
+ 
 And by clicking Click on me, the program will give you a random name of the movie and its poster.
 
 The "Book" button will help you choose a book to spend an enjoyable evening with. You can also choose the genre you are interested in from the four represented:
 
--children's literature
-
--novel
-
--poetry
-
--tragedy
+- children's literature
+- novel
+- poetry
+- tragedy
 
 Just as in the window for selecting a movie, when you press the button, the program will give you the author and the title of the book.
 The last button will help you choose something new for you, maybe it is time to choose a new hobby
