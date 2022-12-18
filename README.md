@@ -50,6 +50,13 @@ pip install -r requirements.txt
 ```
 *Let's go through the code:*
 
+#### What technology has been used:
+
+1. PyQT - for GUI
+2. python - core technology obviously
+3. pytest - for testing programm
+4. API/json - for data exchange
+
 -project.py is the file where the data is formulated. In this file the necessary data from json is converted into a dictionary and transferred for further work with them. Also in the same file is a third-party API from which also takes the necessary data for the hobby and passed to the file main.py
 
 -main.py - all other logic inside PYQT takes place in this file. The data from project.py is passed here for further processing and passing to the user when a certain signal is given (pressing a button). When the button is pressed the signal is passed to a class with a specific set of functions to process this signal. A function triggers and already passes the data sent from project.py, depending on the genre the user has chosen a certain condition is triggered.
