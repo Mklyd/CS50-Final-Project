@@ -12,9 +12,33 @@ When the user enters the applications we see the main screen which has only 3 bu
 
 *How it works:*
 
-The "movie" button allows you to dive into the world of movies and choose something for yourself. By clicking on the genre button you will be able to select one of the presented genres:
-The "Book" button button will help you choose a book to spend a pleasant evening with. You can also choose the genre you are interested in:
-The last button will help you choose something new for you, maybe it's time for you to choose a new hobby
+The "movie" button allows you to dive into the world of movies and choose something for yourself. By clicking on the genre button you will be able to select one of the five genres presented:
+
+-action
+
+-fantasy 
+
+-drama
+
+-romance
+
+-animation
+
+And by clicking Click on me, the program will give you a random name of the movie and its poster.
+
+The "Book" button will help you choose a book to spend an enjoyable evening with. You can also choose the genre you are interested in from the four represented:
+
+-children's literature
+
+-novel
+
+-poetry
+
+-tragedy
+
+Just as in the window for selecting a movie, when you press the button, the program will give you the author and the title of the book.
+The last button will help you choose something new for you, maybe it is time to choose a new hobby
+
 
 ![](movie.png)
 ![](movie_genre.png)
@@ -26,16 +50,22 @@ pip install -r requirements.txt
 ```
 *Let's go through the code:*
 
--project.py is the file where the data is formulated. In this file, the desired data from json is converted into a dictionary and passed for further work with it. 
-This file also has a third party API which also fetches the data.
+-project.py is the file where the data is formulated. In this file the necessary data from json is converted into a dictionary and transferred for further work with them. Also in the same file is a third-party API from which also takes the necessary data for the hobby and passed to the file main.py
 
-The files are used to draw the application:
+-main.py - all other logic inside PYQT takes place in this file. The data from project.py is passed here for further processing and passing to the user when a certain signal is given (pressing a button). When the button is pressed the signal is passed to a class with a specific set of functions to process this signal. A function triggers and already passes the data sent from project.py, depending on the genre the user has chosen a certain condition is triggered.
 
-1. myWIn.py - main window
-2. movieUi.py - movie window
-3. bookUi.py - book window
-4. hobbyUi.py - window for choosing a hobby
-5. main.py - all other logic inside PYQT happens in this file. The data from project.py is passed here for further manipulation and transmitted to the user when a certain signal is given (a button pressed)
+Files are used to render the application:
+-myWIn.py - the main window with three buttons to open the corresponding windows
+
+-movieUi.py - movie window, here is the interface for movies, which appears statically as a result of pressing a button. This is where all the static data is located
+
+-bookUi.py - the window with books, just like the window with movies, this window contains only static data
+
+-hobbyUi.py - window for choosing a hobby, similar to the previous two windows
+
+-styles.py - this file contains the basic settings for refining the look of the application
+
+*In the future I plan to improve this project and add more options and a better look and feel.*
 
 ### I hope you enjoy my project 🙂
 
